@@ -4,7 +4,10 @@
 
 * [contest 1 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest1)
 
-* contest 2 = done
-* contest 3 = done
-* contest 4 = done
-* contest 5 = done
+* [contest 2 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest2)
+
+* [contest 3 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest3)
+
+* [contest 4 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest4)
+
+* [contest 5 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest5)
