@@ -2,7 +2,7 @@
 
 ### Contests:
 
-* contest 1 = done
+* [contest 1 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest1)
 
 * contest 2 = done
 * contest 3 = done
