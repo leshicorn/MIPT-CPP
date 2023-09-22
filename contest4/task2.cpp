@@ -1,33 +1,54 @@
 #include <iostream>
 #include <vector>
-
-using namespace std;
+#include <string>
 
 int main() {
-    int n = 0;
-    cin >> n;
-    vector<int> v;
+    std::vector<std::pair<int, int> > array;
 
-    int sum = 0;
+    int q = 0;
+    std::cin >> q;
 
-    for (int i = 0; i < n; i++) {
-        int inp = 0;
-        cin >> inp;
-        v.push_back(inp);
-        sum += inp;
-    }
+    for (int i = 0; i < q; i++) {
+        std::string input = "";
+        std::cin >> input;
 
-    double mid = static_cast<double>(sum) / static_cast<double>(n);
-    vector<int> days;
-    for (int i = 0; i < n; i++) {
-        if (static_cast<double>(v[i]) > mid) {
-            days.push_back(i);
+        if (input == "WORRY") {
+            int i = 0;
+            std::cin >> i;
+            array[i].second = 1;
+        }
+        else if (input == "QUIET") {
+            int i = 0;
+            std::cin >> i;
+            array[i].second = 0;
+        }
+        else if (input == "COME") {
+            int k = 0;
+            std::cin >> k;
+            if (k > 0) {
+                int start_ind;
+                if (array.size() > 0)
+                    start_ind = array[array.size() - 1].first;
+                else
+                    start_ind = 0;
+                for (int i = 0; i < k; i++) {
+                    array.push_back({start_ind + i + 1, 0});
+                }
+            }
+            else 
+            {
+                for (int i = 0; i < -k; i++) {
+                    array.pop_back();
+                }
+            }
+        }
+        else if (input == "WORRY_COUNT") {
+            int amo = 0;
+            for (int j = 0; j < array.size(); j++) {
+                amo += array[j].second;
+            }
+            std::cout << amo << "\n";
         }
     }
 
-    cout << days.size() << endl;
-    for (int i = 0; i < days.size(); i++) {
-        cout << days[i] << " ";
-    }
-    cout << endl;
 }
