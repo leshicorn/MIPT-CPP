@@ -1,6 +1,6 @@
 # Here is repository for c++ studying
 
-### Contests:
+## Contests
 
 * [contest 1 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest1)
 
@@ -12,4 +12,6 @@
 
 * [contest 5 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest5)
 
-* [contest 6 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/sem23_09_23)
+* [contest 6 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest6)
+
+* [contest 7 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest7)
