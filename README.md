@@ -15,3 +15,7 @@
 * [contest 6 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest6)
 
 * [contest 7 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest7)
+
+* [contest 8 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest8)
+
+* [test 1 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/kr1)
