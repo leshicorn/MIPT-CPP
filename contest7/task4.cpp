@@ -8,7 +8,7 @@ private:
     std::vector<std::pair<int, std::string>> elements;
 
 public:
-    // Метод для добавления новой структуры в массив
+    // Метод для добавления новой структуры в массив!
     void addElement(int num, const std::string& str) {
         // Проверяем, нет ли уже такой структуры в векторе
         for (const auto& element : elements) {
