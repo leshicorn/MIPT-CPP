@@ -1,27 +1,22 @@
- ______________
+ _______________
 < MIPT-CPP 2023 >
- --------------
-          \
-           \
-            \          __---__
-                    _-       /--______
-               __--( /     \ )XXXXXXXXXXX\v.
-             .-XXX(   O   O  )XXXXXXXXXXXXXXX-
-            /XXX(       U     )        XXXXXXX\
-          /XXXXX(              )--_  XXXXXXXXXXX\
-         /XXXXX/ (      O     )   XXXXXX   \XXXXX\
-         XXXXX/   /            XXXXXX   \__ \XXXXX
-         XXXXXX__/          XXXXXX         \__---->
- ----__  XXX__/          XXXXXX      \__         /
-   \-  ---_/   -__/\  XXXXXX            /  ___--/=
-    \-\    ___/    XXXXXX              '--- XXXXXX
-       \-\/XXX\ XXXXXX                      /XXXXX
-         \XXXXXXXXX   \                    /XXXXX/
-          \XXXXXX      >                 _/XXXXX/
-            \XXXXX--__/              __-- XXXX/
-             -XXXXXXXX---------------  XXXXXX-
-                \XXXXXXXXXXXXXXXXXXXXXXXXXX/
-                  ""VXXXXXXXXXXXXXXXXXXV""
+ ---------------
+\                             .       .
+ \                           / `.   .' " 
+  \                  .---.  <    > <    >  .---.
+   \                 |    \  \ - ~ ~ - /  /    |
+         _____          ..-~             ~-..-~
+        |     |   \~~~\.'                    `./~~~/
+       ---------   \__/                        \__/
+      .'  O    \     /               /       \  " 
+     (_____,    `._.'               |         }  \/~~~/
+      `----.          /       }     |        /    \__/
+            `-.      |       /      |       /      `. ,~~|
+                ~-.__|      /_ - ~ ^|      /- _      `..-'   
+                     |     /        |     /     ~-.     `-. _  _  _
+                     |_____|        |_____|         ~ - . _ _ _ _ _>
+
+
 
 
 # Here is repository for c++ studying
