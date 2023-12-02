@@ -39,3 +39,11 @@
 * [contest 15_1 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest15_1)
 
 * [contest 15_2 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest15_2)
+
+* [contest 16 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest16)
+
+* [contest 17 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest17)
+
+* [contest 18 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest18)
+
+* [contest 19 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest19)
