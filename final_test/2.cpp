@@ -31,6 +31,21 @@ public:
         os << T.number << ' ' << T.capacity << ' ' << T.speed;
         return os;
     }
+
+    friend bool operator < (const Truck& left, const Truck& right) {
+        if(left.capacity < right.capacity) {
+            return true;
+        } else if(left.capacity == right.capacity) {
+            if(left.speed < right.speed) {
+                return true;
+            } else if(left.speed == right.speed) {
+                if(left.number < right.number) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     
     
 };
