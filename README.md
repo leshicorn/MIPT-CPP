@@ -49,3 +49,6 @@
 * [contest 19 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/contest19)
 
 * [test 2 = done](https://github.com/leshicorn/MIPT-CPP/tree/master/kr2)
+
+* [final test = done](https://github.com/leshicorn/MIPT-CPP/tree/master/final_test)
+
