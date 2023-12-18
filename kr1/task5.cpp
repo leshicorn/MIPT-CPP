@@ -1,10 +1,10 @@
 /*
-Этот код предоставляет простую систему регистрации и выполнения модулей. Программа начинается с ввода количества модулей (moduleCount) и затем регистрирует каждый модуль с именем "moduleA" или "moduleB". Затем программа запрашивает количество выполнений модулей (runCount) и выполняет соответствующий модуль по его имени.
+Этот код предоставляет простую систему регистрации и выполнения модулей. Программа начинается с ввода количества модулей (moduleCount) и затем регистрирует каждый модуль с именем "moduleOne" или "moduleTwo". Затем программа запрашивает количество выполнений модулей (runCount) и выполняет соответствующий модуль по его имени.
 
 Формат ввода:
 
     Вводится количество модулей (moduleCount).
-    Затем для каждого модуля вводится его имя ("moduleA" или "moduleB").
+    Затем для каждого модуля вводится его имя ("moduleOne" или "moduleTwo").
     Затем вводится количество выполнений модулей (runCount).
     Затем для каждого выполнения вводится имя модуля, который нужно выполнить.
 
@@ -15,20 +15,20 @@
 
 Input:
     2
-    moduleA
-    moduleB
+    moduleOne
+    moduleTwo
     3
-    moduleA
-    moduleB
+    moduleOne
+    moduleTwo
     moduleC
 
 Output:
-    Registering module: moduleA
-    Registering module: moduleB
-    Running module: moduleA
-    ModuleA runs
-    Running module: moduleB
-    ModuleB runs
+    Registering module: moduleOne
+    Registering module: moduleTwo
+    Running module: moduleOne
+    moduleOne runs
+    Running module: moduleTwo
+    moduleTwo runs
     Module not found: moduleC
 
 */
@@ -43,23 +43,23 @@ public:
     virtual void run() = 0;
 };
 
-class ModuleA : public Module {
+class moduleOne : public Module {
 public:
     std::string getName() const override {
-        return "moduleA";
+        return "moduleOne";
     }
     void run() override {
-        std::cout << "ModuleA runs" << std::endl;
+        std::cout << "moduleOne runs" << std::endl;
     }
 };
 
-class ModuleB : public Module {
+class moduleTwo : public Module {
 public:
     std::string getName() const override {
-        return "moduleB";
+        return "moduleTwo";
     }
     void run() override {
-        std::cout << "ModuleB runs" << std::endl;
+        std::cout << "moduleTwo runs" << std::endl;
     }
 };
 
@@ -68,16 +68,16 @@ public:
     void registerModule(Module* m) {
         if (m) {
             modules[m->getName()] = m;
-            std::cout << "Registering module: " << m->getName() << std::endl;
+            // std::cout << "Registering module: " << m->getName() << std::endl;
         }
     }
 
     void runModule(const std::string moduleName) const {
     if (modules.count(moduleName) > 0) {
-        std::cout << "Running module: " << moduleName << std::endl;
+        // std::cout << "Running module: " << moduleName << std::endl;
         modules.at(moduleName)->run();
     } else {
-        std::cout << "Module not found: " << moduleName << std::endl;
+        // std::cout << "Module not found: " << moduleName << std::endl;
     }
 }
 
@@ -98,10 +98,10 @@ int main() {
         std::getline(std::cin, moduleName);
         if (moduleName.empty()) continue;
 
-        if (moduleName == "moduleA") {
-            dispatcher.registerModule(new ModuleA());
-        } else if (moduleName == "moduleB") {
-            dispatcher.registerModule(new ModuleB());
+        if (moduleName == "moduleOne") {
+            dispatcher.registerModule(new moduleOne());
+        } else if (moduleName == "moduleTwo") {
+            dispatcher.registerModule(new moduleTwo());
         }
     }
 

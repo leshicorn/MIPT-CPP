@@ -1,42 +1,6 @@
-/*
-Этот код предоставляет реализацию класса Rational, представляющего рациональное число, и демонстрирует его использование в двух функциях: base_test() и normal_run().
-Формат ввода и вывода:
-
-    Формат ввода для normal_run():
-        Пользователь вводит четыре целых числа a, b, c, и d, представляющих две рациональные дроби в формате "a/b" и "c/d".
-
-    Формат вывода для normal_run():
-        Выводятся результаты основных арифметических операций (+, -, *, /) между введенными рациональными числами, а также результаты умножения одного из них на целое число.
-
-    Формат вывода для base_test():
-        Выводятся результаты основных арифметических операций для двух заранее определенных рациональных чисел (a и b), а также результаты умножения каждого из них на целое число.
-
-    Операции, поддерживаемые классом Rational:
-        Сложение (+), вычитание (-), умножение (*), деление (/) двух рациональных чисел.
-    
-    input:
-        1 2 1 3
-    output:
-        5/6
-        1/6
-        1/3
-        3/2
-        3/2
-        4/3
-
-        base_test():
-        1/2
-        1/3
-        5/6
-        1/6
-        1/6
-        3/2
-        3/2
-        4/3
-
-*/
-
 #include <iostream>
+
+using namespace std;
 
 /**
  * @brief A class representing a rational number with basic arithmetic operations.
@@ -120,7 +84,7 @@ public:
      * @param r The rational number to be outputted.
      * @return The output stream.
      */
-    friend std::ostream& operator<<(std::ostream& out, const Rational& r) {
+    friend ostream& operator<<(ostream& out, const Rational& r) {
         out << r.numerator << "/" << r.denominator;
         return out;
     }
@@ -133,32 +97,32 @@ private:
 void base_test() {
     Rational a(1, 2);
     Rational b(1, 3);
-    std::cout << a << std::endl;
-    std::cout << b << std::endl;
-    std::cout << a + b << std::endl;
-    std::cout << a - b << std::endl;
-    std::cout << a * b << std::endl;
-    std::cout << a / b << std::endl;
-    std::cout << 3 * a << std::endl;
-    std::cout << b * 4 << std::endl;
+    cout << a << endl;
+    cout << b << endl;
+    cout << a + b << endl;
+    cout << a - b << endl;
+    cout << a * b << endl;
+    cout << a / b << endl;
+    cout << 3 * a << endl;
+    cout << b * 4 << endl;
 }
 
 void normal_run() {
     int a, b, c, d;
-    std::cout << "Введите две рац.дроби в формате a b c d. Дроби будут иметь вид a/b, c/d\n";
-    std::cin >> a >> b >> c >> d;
+    cout << "Введите две рац.дроби в формате a b c d. Дроби будут иметь вид a/b, c/d\n";
+    cin >> a >> b >> c >> d;
     Rational r1(a, b);
     Rational r2(c, d);
-    std::cout << r1 + r2 << std::endl;
-    std::cout << r1 - r2 << std::endl;
-    std::cout << r1 * r2 << std::endl;
-    std::cout << r1 / r2 << std::endl;
-    std::cout << 3 * r1 << std::endl;
-    std::cout << r2 * 4 << std::endl;
+    cout << r1 + r2 << endl;
+    cout << r1 - r2 << endl;
+    cout << r1 * r2 << endl;
+    cout << r1 / r2 << endl;
+    cout << 3 * r1 << endl;
+    cout << r2 * 4 << endl;
 }
 
 int main() {
-    // base_test();
+    base_test();
     normal_run();
     return 0;
 }

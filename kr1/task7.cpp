@@ -26,7 +26,6 @@ int main() {
     // Сортируем слова, передавая функцию-компаратор compareByLength
     std::sort(sortedWords.begin(), sortedWords.end(), compareByLength);
 
-    std::cout << '\n';
     // Выводим отсортированные уникальные слова
     for (const std::string& word : sortedWords) {
         std::cout << word << '\n';
