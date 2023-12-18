@@ -1,3 +1,41 @@
+/*
+Этот код представляет собой пример использования полиморфизма и наследования в языке программирования C++. Он решает задачу создания и использования различных обработчиков (handlers), которые могут выполнять различные операции в зависимости от своего типа.
+
+Формат ввода:
+
+    Вводится имя пользователя (username).
+    Затем вводится количество обработчиков (handlerCount).
+    Для каждого обработчика вводится его имя (handlerName).
+
+Формат вывода:
+
+    Для каждого обработчика выводится сообщение о запуске (Running handler) и имя пользователя.
+    Вызывается метод preProcess для каждого обработчика.
+    Проверяется доступ пользователя к обработчику с помощью метода accessAllowed.
+    Если доступ разрешен, вызывается метод run, иначе выводится сообщение "Access denied".
+    Вызывается метод postProcess для каждого обработчика.
+    Объекты обработчиков освобождаются с помощью оператора delete.  
+
+Пример ввода:
+    admin
+    3
+    HandlerOne
+    HandlerTwo
+    HandlerThree
+Пример вывода:
+    Running handler HandlerOne for user admin
+    SmartHandler preprocess
+    SmartHandler runs
+    SmartHandler postprocess
+    Running handler HandlerTwo for user admin
+    SmartHandler preprocess
+    SmartHandler runs
+    SmartHandler postprocess
+    Running handler HandlerThree for user admin
+    HeavyHandler runs
+
+*/
+
 #include <iostream>
 #include <string>
 
@@ -13,6 +51,7 @@ public:
 
     virtual bool accessAllowed(std::string username) {
         // Реализация по умолчанию всегда разрешает доступ
+        if (username == "14") return true;
         return true;
     }
 

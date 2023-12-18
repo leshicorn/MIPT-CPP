@@ -1,3 +1,38 @@
+/*
+Этот код предоставляет простую систему регистрации и выполнения модулей. Программа начинается с ввода количества модулей (moduleCount) и затем регистрирует каждый модуль с именем "moduleA" или "moduleB". Затем программа запрашивает количество выполнений модулей (runCount) и выполняет соответствующий модуль по его имени.
+
+Формат ввода:
+
+    Вводится количество модулей (moduleCount).
+    Затем для каждого модуля вводится его имя ("moduleA" или "moduleB").
+    Затем вводится количество выполнений модулей (runCount).
+    Затем для каждого выполнения вводится имя модуля, который нужно выполнить.
+
+Формат вывода:
+Программа выводит информацию о регистрации модулей и о выполнении каждого модуля. Если модуль не найден при выполнении, программа сообщит об этом.
+
+Пример:
+
+Input:
+    2
+    moduleA
+    moduleB
+    3
+    moduleA
+    moduleB
+    moduleC
+
+Output:
+    Registering module: moduleA
+    Registering module: moduleB
+    Running module: moduleA
+    ModuleA runs
+    Running module: moduleB
+    ModuleB runs
+    Module not found: moduleC
+
+*/
+
 #include <iostream>
 #include <string>
 #include <unordered_map>

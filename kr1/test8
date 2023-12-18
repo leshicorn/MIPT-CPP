@@ -1,0 +1,18 @@
+input:
+7
+sensor1 80
+sensor2 35
+sensor1 -4
+sensor1 8
+sensor2 -1
+sensor2 15
+sensor2 80
+3
+sensor1
+sensor2
+sensor3
+
+output:
+8
+15
+no data
